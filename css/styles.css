@@ -271,12 +271,14 @@ header {
   display: flex;
   justify-content: space-around;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .video-item {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .thumbnail-video {
