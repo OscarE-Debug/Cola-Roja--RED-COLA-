@@ -40,6 +40,8 @@ article {
 header {
   background-color: #282828;
   padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .container-navbar {
@@ -309,8 +311,6 @@ header {
 
 .items-products {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -320,6 +320,7 @@ header {
   padding: 20px;
   margin: 10px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .image-product {
@@ -332,6 +333,7 @@ header {
   width: 200px;
   object-fit: cover;
   cursor: pointer;
+  margin: 20px 0px;
 }
 
 footer {
@@ -376,4 +378,24 @@ footer {
   display: flex;
   justify-content: space-between;
   color: var(--special-text-color);
+}
+
+/* *Responsive */
+
+@media screen and (max-width: 828px) {
+  .background-items-hero.item-1 {
+    width: 428px;
+  }
+  .background-items-hero.item-2 {
+    width: 384px;
+  }
+  .decoration-item-hero {
+    width: 353.5px;
+  }
+  .slogan-hero {
+    right: 10%;
+  }
+  .products-hero {
+    width: 30%;
+  }
 }
