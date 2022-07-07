@@ -212,8 +212,17 @@ header {
 
 .description-article-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.title-2 {
+  width: 300px;
+}
+
+.text-2 {
+  width: 300px;
 }
 
 .text-2 {
@@ -389,6 +398,17 @@ footer {
 }
 
 /* *Responsive */
+
+@media screen and (max-width: 1000px) {
+  .title-2 {
+    width: 100%;
+    min-width: 100%;
+  }
+  .text-2 {
+    width: 100%;
+    min-width: 100%;
+  }
+}
 
 @media screen and (max-width: 917px) {
   .description-article-1 {
