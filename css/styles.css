@@ -164,9 +164,9 @@ header {
 .article-1 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .images-article-1 {
@@ -175,6 +175,7 @@ header {
   height: 540px;
   align-items: center;
   justify-content: center;
+  min-width: 432px;
 }
 
 .background-articles-1 {
@@ -388,6 +389,12 @@ footer {
 }
 
 /* *Responsive */
+
+@media screen and (max-width: 917px) {
+  .description-article-1 {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 828px) {
   .background-items-hero.item-1 {
