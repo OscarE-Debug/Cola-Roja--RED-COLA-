@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Red cola refresco de cola">
+    <meta name="description" content="Red cola el mejor refresco de cola numero uno de mexico">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="imgs/favicon.svg">
@@ -12,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <title>RedCola | Empresa</title>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -20,28 +24,31 @@
             <a class="navbrand-logo" href="#">
                 <img src="imgs/RedCola Logo.svg" alt="RedCola logo">
             </a>
-            <nav class="navigation">
-                <ul class="links-page">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Plataformas</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">Nuestra familia</a></li>
-                    <li><a href="#">Productos</a></li>
-                </ul>
-                <ul class="social-links">
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                </ul>
-            </nav>
+            <div class="navigation-mobile">
+                <nav class="navigation">
+                    <ul class="links-page">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Plataformas</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Productos</a></li>
+                    </ul>
+                    <hr class="divisor-mobile">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="bi bi-list"></i>
         </div>
     </header>
     <div class="hero">
         <img src="imgs/background.jpg" class="background-hero" alt="black concrete">
         <div class="container items-hero">
-            <img class="background-items-hero" src="imgs/Ellipse 1.svg">
-            <img class="background-items-hero" src="imgs/Ellipse 2.svg">
+            <img class="background-items-hero item-1" src="imgs/Ellipse 1.svg">
+            <img class="background-items-hero item-2" src="imgs/Ellipse 2.svg">
             <img class="decoration-item-hero" src="imgs/RED_COLA_SALPICA.png" alt="salpicadura de red cola">
             <img class="products-hero" src="imgs/Red cola productos.png" alt="productos red cola">
             <img class="slogan-hero" src="imgs/No te quedes con el antojo.svg"
@@ -132,7 +139,7 @@
                         <img class="thumbnail-video" src="imgs/RED_DE_AMIGAS.png" alt="red de amigas">
                         <div class="video-description">
                             <h5 class="description-video-title">
-                                Receta de tamal oaxaqueño
+                                Pipian Tlayacapan
                             </h5>
                             <p class="text text-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, sit imperdiet risus,
@@ -144,7 +151,7 @@
                         <img class="thumbnail-video" src="imgs/Trucha estilo Malinalco.png" alt="red de amigas">
                         <div class="video-description">
                             <h5 class="description-video-title">
-                                Receta de tamal oaxaqueño
+                                Trucha Malinalco
                             </h5>
                             <p class="text text-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, sit imperdiet risus,
@@ -156,7 +163,7 @@
                         <img class="thumbnail-video" src="imgs/RED_DE_AMIGAS.png" alt="red de amigas">
                         <div class="video-description">
                             <h5 class="description-video-title">
-                                Receta de tamal oaxaqueño
+                                Pipian Tlayacapan
                             </h5>
                             <p class="text text-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, sit imperdiet risus,
@@ -168,20 +175,54 @@
             </div>
         </article>
 
-        <hr>
+        <div class="container">
+            <hr>
 
-        <article class="products">
-            <h6 class="title title-6">Nuestros productos</h6>
-            <img src="imgs/Red-cola-lata.png" alt="Red cola de lata">
-            <img src="imgs/Red-cola-2L.png" alt="Red cola 2 litros">
-            <img src="imgs/RED_COLA_3L.png" alt="Red cola 3 litros">
-            <img src="imgs/Red-cola-600ml.png" alt="Red cola 600 mililitros">
-            <img src="imgs/Red-cola-light-600ml.png" alt="Red cola 600 mililitros light">
-            <img src="imgs/Red-cola-light-2L.png" alt="Red cola 2 litros light">
-            <img src="imgs/Red-cola-lata-light.png" alt="Red cola lata light">
-        </article>
+            <article class="products">
+                <h6 class="title title-6">Nuestros productos</h6>
+                <div class="items-products">
+                    <div class="item-product">
+                        <img class="image-product" src="imgs/Red-cola-lata.png" alt="Red cola de lata">
+                        <img class="image-product" src="imgs/Red-cola-2L.png" alt="Red cola 2 litros">
+                    </div>
+                    <div class="item-product">
+                        <img class="image-product" src="imgs/RED_COLA_3L.png" alt="Red cola 3 litros">
+                        <img class="image-product" src="imgs/Red-cola-600ml.png" alt="Red cola 600 mililitros">
+                    </div>
+                    <div class="item-product">
+                        <img class="image-product" src="imgs/Red-cola-light-600ml.png"
+                            alt="Red cola 600 mililitros light">
+                        <img class="image-product" src="imgs/Red-cola-light-2L.png" alt="Red cola 2 litros light">
+                    </div>
+                    <div class="item-product">
+                        <img class="image-product" src="imgs/Red-cola-lata-light.png" alt="Red cola lata light">
+                    </div>
+                </div>
+            </article>
+        </div>
 
     </div>
+
+    <footer>
+        <div class="container container-footer">
+            <a class="logo-footer" href="#"><img src="imgs/RedCola Logo.svg" alt="logo red cola"></a>
+            <hr>
+            <ul class="links-footer">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Plataformas</a></li>
+                <li><a href="#">Nuestra familia</a></li>
+                <li><a href="#">Productos</a></li>
+            </ul>
+            <div class="disclaimer">
+                <p class="text">
+                    RedCola<sup>&#169</sup> todos los derechos reservados
+                </p>
+                <p class="text">
+                    ¡Muchas gracias por visitarnos!
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
