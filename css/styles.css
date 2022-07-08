@@ -42,6 +42,7 @@ header {
   padding: 10px;
   position: relative;
   z-index: 1;
+  min-height: 78px;
 }
 
 .container-navbar {
@@ -52,6 +53,34 @@ header {
 }
 
 .navbrand-logo {
+  padding: 10px;
+}
+
+.navigation-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 78px;
+}
+
+.navigation-mobile .navigation {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation-mobile .navigation .links-page {
+  flex-direction: column;
+  display: block;
+  width: 90%;
+}
+
+.navigation-mobile .social-links {
+  margin: auto;
   padding: 10px;
 }
 
