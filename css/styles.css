@@ -71,17 +71,30 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }
 
 .navigation-mobile .navigation .links-page {
   flex-direction: column;
   display: block;
-  width: 90%;
+  width: 100%;
+}
+
+.navigation-mobile .navigation .links-page li {
+  padding: 10px 0px;
 }
 
 .navigation-mobile .social-links {
   margin: auto;
   padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: none;
+  width: 100%;
+}
+
+.navigation-mobile .social-links li {
+  margin: none;
 }
 
 .navigation {
