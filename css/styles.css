@@ -378,6 +378,21 @@ header {
   width: 300px;
 }
 
+.link-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-play-circle-fill {
+  color: #fff;
+  padding: 10px 12px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  border-radius: 100%;
+}
+
 .thumbnail-video {
   width: 100%;
   width: 300px;
