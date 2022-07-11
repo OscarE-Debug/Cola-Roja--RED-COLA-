@@ -412,6 +412,65 @@ header {
   padding: 0px;
 }
 
+/* *Overlay feature products */
+
+.overlay-products {
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  display: none;
+}
+
+.overlay-products.active {
+  display: flex;
+}
+
+.items-overlay {
+  width: 80%;
+  display: flex;
+  max-width: 700px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bi-x {
+  margin: 10px 0px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5em;
+}
+
+.img-overlay {
+  object-fit: contain;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  padding: 10px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.descriptions {
+  width: 70%;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+}
+
+.dsc {
+  display: none;
+}
+
 /* *Footer and products */
 
 .products {

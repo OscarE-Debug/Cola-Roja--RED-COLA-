@@ -98,3 +98,19 @@ ScrollReveal({
 ScrollReveal({
   delay: 900,
 }).reveal(".products-hero");
+
+// *Overlay dom elements
+
+let itemClick = document.querySelectorAll(".item-product");
+let overlay = document.querySelector(".overlay-products");
+let closeOverlay = document.querySelector(".close-overlay");
+
+itemClick.forEach((element)=>{
+  element.addEventListener("click",()=>{
+    overlay.classList.add("active");
+  });
+});
+
+closeOverlay.addEventListener("click", ()=> {
+  overlay.classList.remove("active");
+});
