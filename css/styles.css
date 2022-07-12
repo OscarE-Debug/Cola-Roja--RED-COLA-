@@ -184,7 +184,7 @@ header {
 .background-hero {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -378,6 +378,21 @@ header {
   width: 300px;
 }
 
+.link-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-play-circle-fill {
+  color: #fff;
+  padding: 10px 12px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  border-radius: 100%;
+}
+
 .thumbnail-video {
   width: 100%;
   width: 300px;
@@ -395,6 +410,91 @@ header {
   text-align: justify;
   line-height: normal;
   padding: 0px;
+}
+
+/* *Overlay feature products */
+
+.overlay-products {
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  display: none;
+  opacity: 0;
+}
+
+.overlay-products.active {
+  display: flex;
+  opacity: 1;
+  animation: 0.5s ease-in-out forwards openOverlay;
+}
+
+.overlay-products.removing-active {
+  animation: 0.5s ease-in-out forwards removingOverlay;
+}
+
+.hr-overlay {
+  margin: 0px 10px;
+}
+
+.items-overlay {
+  width: 80%;
+  display: flex;
+  max-width: 700px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bi-x {
+  margin: 10px 0px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5em;
+}
+
+.img-overlay {
+  object-fit: contain;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  padding: 10px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.descriptions {
+  width: 70%;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+}
+
+.dsc {
+  display: none;
+}
+
+.dsc h6 {
+  line-height: normal;
+  font-size: 1.5em;
+}
+
+.dsc p {
+  font-size: 1em;
+}
+
+.dsc.active {
+  display: block;
 }
 
 /* *Footer and products */
@@ -586,5 +686,25 @@ footer {
   }
   .illustration-article-3 {
     min-width: 100%;
+  }
+}
+
+/* *Overlay animation */
+
+@keyframes openOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes removingOverlay {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
