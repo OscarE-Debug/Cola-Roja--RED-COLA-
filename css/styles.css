@@ -184,7 +184,7 @@ header {
 .background-hero {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -491,6 +491,7 @@ header {
 
 .dsc p {
   font-size: 1em;
+  text-align: justify;
 }
 
 .dsc.active {

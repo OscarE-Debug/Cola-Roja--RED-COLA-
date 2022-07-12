@@ -112,7 +112,7 @@ itemClick.forEach((element) => {
     overlay.classList.add("active");
     const url = element.dataset.url;
     const classDsc = element.dataset.class;
-    const dsc = document.querySelector("." + classDsc)
+    const dsc = document.querySelector("." + classDsc);
 
     imageOverlay.src = url;
     dsc.classList.add("active");
@@ -122,9 +122,9 @@ itemClick.forEach((element) => {
 closeOverlay.addEventListener("click", () => {
   overlay.classList.add("removing-active");
   setTimeout(function () {
-    descriptions.forEach((element)=>{
-      element.classList.remove("active")
-    })
+    descriptions.forEach((element) => {
+      element.classList.remove("active");
+    });
     overlay.classList.remove("active");
     overlay.classList.remove("removing-active");
   }, 300);
