@@ -101,16 +101,31 @@ ScrollReveal({
 
 // *Overlay dom elements
 
-let itemClick = document.querySelectorAll(".item-product");
+let itemClick = document.querySelectorAll(".image-product");
 let overlay = document.querySelector(".overlay-products");
 let closeOverlay = document.querySelector(".close-overlay");
+let imageOverlay = document.querySelector(".img-overlay");
+let descriptions = document.querySelectorAll(".dsc");
 
-itemClick.forEach((element)=>{
-  element.addEventListener("click",()=>{
+itemClick.forEach((element) => {
+  element.addEventListener("click", () => {
     overlay.classList.add("active");
+    const url = element.dataset.url;
+    const classDsc = element.dataset.class;
+    const dsc = document.querySelector("." + classDsc)
+
+    imageOverlay.src = url;
+    dsc.classList.add("active");
   });
 });
 
-closeOverlay.addEventListener("click", ()=> {
-  overlay.classList.remove("active");
+closeOverlay.addEventListener("click", () => {
+  overlay.classList.add("removing-active");
+  setTimeout(function () {
+    descriptions.forEach((element)=>{
+      element.classList.remove("active")
+    })
+    overlay.classList.remove("active");
+    overlay.classList.remove("removing-active");
+  }, 300);
 });

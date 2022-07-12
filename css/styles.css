@@ -425,10 +425,21 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   display: none;
+  opacity: 0;
 }
 
 .overlay-products.active {
   display: flex;
+  opacity: 1;
+  animation: 0.5s ease-in-out forwards openOverlay;
+}
+
+.overlay-products.removing-active {
+  animation: 0.5s ease-in-out forwards removingOverlay;
+}
+
+.hr-overlay {
+  margin: 0px 10px;
 }
 
 .items-overlay {
@@ -465,10 +476,25 @@ header {
   width: 70%;
   border-radius: 5px;
   background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
 }
 
 .dsc {
   display: none;
+}
+
+.dsc h6 {
+  line-height: normal;
+  font-size: 1.5em;
+}
+
+.dsc p {
+  font-size: 1em;
+}
+
+.dsc.active {
+  display: block;
 }
 
 /* *Footer and products */
@@ -660,5 +686,25 @@ footer {
   }
   .illustration-article-3 {
     min-width: 100%;
+  }
+}
+
+/* *Overlay animation */
+
+@keyframes openOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes removingOverlay {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
